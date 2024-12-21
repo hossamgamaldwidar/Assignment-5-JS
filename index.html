@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/index.css">
+    <title>Weather</title>
+</head>
+
+<body>
+
+    <!------------ Header Section -------------->
+    <header>
+        <nav class="navbar navbar-expand-lg py-5">
+            <div class="container">
+                <div class="logo d-flex justify-content-between">
+                    <div class="img-logo">
+                        <img src="Images/logo@2x.png" class="d-block" alt="">
+                    </div>
+                    <div class="logo-text d-flex flex-column justify-content-center align-items-start ps-2">
+                        <h1>Weather</h1>
+                        <p>Tagline goes here</p>
+                    </div>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars" style="color: white;"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item px-2">
+                            <a class="nav-link active px-3 py-1" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link px-3 py-1" href="#">News</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link px-3 py-1" href="#">Live cameras</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link px-3 py-1" href="#">Photos</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link px-3 py-1" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!------------ Find Section -------------->
+
+    <section class="find d-flex flex-column justify-content-center align-items-center">
+        <div class="container">
+            <div class="search-bar">
+                <input type="text" id="find" name="search" placeholder="Find your location..."
+                    class="input-search p-3 px-4 w-100 rounded rounded-5 border-0">
+                <button type="submit" class="btn btn-info rounded rounded-5 border-0 px-5">Find</button>
+            </div>
+            <div class="weather-info mt-5 mb-5">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-4 ">
+                        <div class="weather-items weather-items1 rounded rounded-3">
+                            <div class="item-head d-flex justify-content-between p-2 rounded-top-3">
+                                <p class="today-name">Tuesday</p>
+                                <div class="d-flex justify-content-center">
+                                    <p class="today-number">17</p>
+                                    <p class="month-name">December</p>
+                                </div>
+                            </div>
+                            <div class="info p-3">
+                                <p class="city-name">City Name</p>
+                                <div class="d-flex flex-column py-3">
+                                    <p class="temperature">26.3<sup>o</sup>C</p>
+                                    <img src="Images/302.webp" alt="cloud" class="temperature-icon w-25">
+                                </div>
+                                <p class="temp-description py-3">Moderate rain</p>
+                                <div class="item-footer d-flex justify-content-between p-2">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <img src="Images/icon-umberella.png" alt="umberella">
+                                        <p class="humidity p-0 m-0 mx-2">20%</p>
+
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <img src="Images/icon-wind.png" alt="wind">
+                                        <p class="air p-0 m-0 mx-2">18km/h</p>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <img src="Images/icon-compass.png" alt="compass">
+                                        <p class="navegation p-0 m-0 mx-2">East</p>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- NEXT DAY -->
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-4 ">
+                        <div class="weather-items weather-items2 rounded rounded-3 h-100">
+                            <div class="item-head d-flex justify-content-center p-2 rounded-top-3">
+                                <p class="next-date">Wednesday</p>
+                            </div>
+                            <div class="info d-flex flex-column justify-content-center align-items-center h-75">
+                                <img src="Images/302.webp" alt="cloud" class="next-day-icon w-25">
+                                <p class="max-next-day fs-3 m-0 ">26.3<sup>o</sup>C</p>
+                                <p class="min-next-day py-3 m-0">12.1<sup>o</sup></p>
+                                <p class="temp-text p-0 m-0">Partly Cloudy</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-4 ">
+                        <div class="weather-items weather-items2 rounded rounded-3 h-100">
+                            <div class="item-head d-flex justify-content-center p-2 rounded-top-3">
+                                <p class="next-date">Wednesday</p>
+                            </div>
+                            <div class="info d-flex flex-column justify-content-center align-items-center h-75">
+                                <img src="Images/302.webp" alt="cloud" class="next-day-icon w-25">
+                                <p class="max-next-day fs-3 m-0 ">26.3<sup>o</sup>C</p>
+                                <p class="min-next-day py-3 m-0">12.1<sup>o</sup></p>
+                                <p class="temp-text p-0 m-0">Partly Cloudy</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="footer-containt pb-5">
+                        <div class="subscribe-bar">
+                            <input type="email" id="Subscribe" name="Subscribe"
+                                placeholder="Enter your email to subscribe..."
+                                class="input-subscribe p-3 px-4 w-100 rounded rounded-5 border-0">
+                            <button type="submit"
+                                class="btn btn-info rounded rounded-5 border-0 px-4">Subscribe</button>
+                        </div>
+                        <div class="footer-social d-flex justify-content-end  align-items-center">
+                            <div class="social">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            </div>
+                            <div class="social">
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </div>
+                            <div class="social">
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                            <div class="social">
+                                <a href="#"><i class="fab fa-pinterest"></i></a>
+                            </div>
+                            <div class="social">
+                                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="py-5">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/index.js"></script>
+</body>
+
+</html>
